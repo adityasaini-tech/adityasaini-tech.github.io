@@ -61,7 +61,6 @@
             align-items: center;
         }
 
-        /* NAME MADE BIGGER HERE */
         .logo {
             font-size: 1.7rem;
             font-weight: 600;
@@ -126,7 +125,6 @@
             justify-content: center;
         }
 
-        /* HERO LAYOUT FOR IMAGE */
         .hero-layout {
             display: flex;
             align-items: center;
@@ -143,20 +141,18 @@
         }
 
         .hero-image img {
-    width: 320px;
-    height: 420px;
-    object-fit: cover;
-    border-radius: 12px;
-    border: 1px solid var(--border);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
-    transition: transform 0.4s ease;
-   transform: translateY(-60px);
-;
-}
-
+            width: 320px;
+            height: 420px;
+            object-fit: cover;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+            transition: transform 0.4s ease;
+            transform: translateY(-60px);
+        }
 
         .hero-image img:hover {
-            transform: translateY(-5px);
+            transform: translateY(-65px);
         }
 
         .hero h1 {
@@ -198,19 +194,6 @@
         .social-links a:hover {
             color: var(--text);
             border-bottom-color: var(--text);
-        }
-
-        /* Mobile layout */
-        @media (max-width: 768px) {
-            .hero-layout {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .hero-image img {
-                width: 240px;
-                height: 320px;
-            }
         }
 
         /* Sections */
@@ -424,6 +407,13 @@
             color: var(--bg);
         }
 
+        .contact-email {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            margin-top: 1.5rem;
+        }
+
         footer {
             border-top: 1px solid var(--border);
             padding: 3rem;
@@ -455,6 +445,240 @@
                 transform: translateY(0);
             }
         }
+
+        /* ===== MOBILE RESPONSIVE STYLES ===== */
+        
+        /* Tablets and smaller */
+        @media (max-width: 1024px) {
+            .hero h1 {
+                font-size: 4rem;
+            }
+
+            .hero-layout {
+                gap: 3rem;
+            }
+
+            .hero-image img {
+                width: 280px;
+                height: 380px;
+            }
+        }
+
+        /* Mobile devices */
+        @media (max-width: 768px) {
+            body {
+                font-size: 16px;
+            }
+
+            /* Navigation */
+            .nav-container {
+                padding: 1.5rem 1.5rem;
+            }
+
+            .logo {
+                font-size: 1.3rem;
+            }
+
+            .nav-links {
+                gap: 1.5rem;
+            }
+
+            .nav-links a {
+                font-size: 0.85rem;
+            }
+
+            /* Hero Section */
+            .hero {
+                padding: 9rem 1.5rem 4rem;
+                min-height: auto;
+            }
+
+            .hero-layout {
+                flex-direction: column;
+                gap: 3rem;
+                text-align: center;
+            }
+
+            .hero-text {
+                max-width: 100%;
+            }
+
+            .hero h1 {
+                font-size: 2.8rem;
+                margin-bottom: 1.5rem;
+                line-height: 1.2;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+                margin-bottom: 2rem;
+            }
+
+            .hero-image {
+                order: -1; /* Image appears before text */
+            }
+
+            .hero-image img {
+                width: 240px;
+                height: 320px;
+                transform: translateY(0);
+                margin: 0 auto;
+            }
+
+            .hero-image img:hover {
+                transform: translateY(-5px);
+            }
+
+            .social-links {
+                justify-content: center;
+                gap: 1.5rem;
+                flex-wrap: wrap;
+            }
+
+            .social-links a {
+                font-size: 0.85rem;
+            }
+
+            /* Sections */
+            section {
+                padding: 4rem 1.5rem;
+            }
+
+            .section-title {
+                font-size: 0.75rem;
+                margin-bottom: 2.5rem;
+            }
+
+            /* Essays */
+            .essay-grid {
+                gap: 3rem;
+            }
+
+            .essay-card {
+                padding-top: 1.5rem;
+            }
+
+            .essay-card:hover {
+                transform: translateX(5px);
+            }
+
+            .essay-card h3 {
+                font-size: 1.6rem;
+            }
+
+            .essay-date {
+                font-size: 0.75rem;
+            }
+
+            .read-more {
+                font-size: 0.8rem;
+            }
+
+            /* Projects */
+            #projects {
+                padding: 4rem 0;
+            }
+
+            .projects-container {
+                padding: 0 1.5rem;
+            }
+
+            .project-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .project-card {
+                padding: 2rem 1.5rem;
+            }
+
+            .project-card h3 {
+                font-size: 1.5rem;
+            }
+
+            .project-card p {
+                font-size: 0.95rem;
+            }
+
+            .tag {
+                font-size: 0.7rem;
+                padding: 0.35rem 0.8rem;
+            }
+
+            /* Contact */
+            #contact {
+                padding: 5rem 1.5rem;
+            }
+
+            #contact h2 {
+                font-size: 2.5rem;
+                margin-bottom: 1.5rem;
+            }
+
+            #contact p {
+                font-size: 1.05rem;
+                margin-bottom: 2rem;
+            }
+
+            .contact-links {
+                flex-direction: column;
+                gap: 1rem;
+                align-items: center;
+            }
+
+            .contact-links a {
+                font-size: 0.85rem;
+                padding: 0.9rem 1.8rem;
+                width: 100%;
+                max-width: 280px;
+                text-align: center;
+            }
+
+            .contact-email {
+                font-size: 0.75rem;
+            }
+
+            /* Footer */
+            footer {
+                padding: 2rem 1.5rem;
+            }
+
+            footer p {
+                font-size: 0.75rem;
+            }
+        }
+
+        /* Small mobile devices */
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .hero-image img {
+                width: 200px;
+                height: 280px;
+            }
+
+            .essay-card h3 {
+                font-size: 1.4rem;
+            }
+
+            #contact h2 {
+                font-size: 2rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+            }
+
+            .nav-links a {
+                font-size: 0.8rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -481,7 +705,7 @@
     I build software, systems,<br>and businesses designed to scale
 </h1>
 <p>
-    I’m Aditya Saini — a technologist and entrepreneur working with AI, automation, and product design to create tools that compound value, independence, and long-term advantage.
+    I'm Aditya Saini — a technologist and entrepreneur working with AI, automation, and product design to create tools that compound value, independence, and long-term advantage.
 </p>
 <div class="social-links">
     <a href="https://github.com/adityasaini-tech" target="_blank" rel="noopener noreferrer">GitHub</a>
@@ -597,18 +821,15 @@
 
         <!-- Contact -->
         <section id="contact">
-            <h2>Let’s Connect</h2>
+            <h2>Let's Connect</h2>
             <p>
                 Open to collaborations, conversations, and ambitious projects.
             </p>
             <div class="contact-links">
                 <a href="mailto:adityasaini903@gmail.com">Email Me</a>
                 <a href="https://twitter.com/adityasainiX" target="_blank" rel="noopener noreferrer">X (DM)</a>
-                <p style="font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--text-secondary);">
-adityasaini903@gmail.com
-</p>
-
             </div>
+            <p class="contact-email">adityasaini903@gmail.com</p>
         </section>
     </main>
 
