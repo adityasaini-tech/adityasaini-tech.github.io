@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f5f3ec"><meta name="description" content="A gentle, playable journey from reaction to intention. Stand back, observe and steer your thoughts.">
+<title>Stillpoint — A little space. A different thought.</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="motion.css">
+<link rel="stylesheet" href="refined.css">
+</head>
+<body>
+<header><a class="brand" href="./" aria-label="Stillpoint home"><span class="brand-icon">✳</span> stillpoint<span class="brand-dot">.</span></a><span class="header-note">A LITTLE SPACE. A DIFFERENT THOUGHT.</span><nav><button id="about">The idea behind it <span>↗</span></button><button id="sound" aria-pressed="false" aria-label="Enable ambient sound">♪ <span>Sound off</span></button></nav></header>
+<main>
+<section class="intro"><div><div class="eyebrow"><span></span> AN INTERACTIVE PRACTICE</div><h1>Stand back. Observe.<br><em>Steer your thoughts.</em></h1></div><p>A small practice for the moments<br>when your mind gets loud.</p></section>
+<section class="game" aria-label="Thought steering game">
+<div class="world" id="world">
+<div class="scene-top"><span class="scene-label" id="sceneLabel">SCENE 01 / THE OFFICE</span><span class="live-label"><i></i> <span id="worldState">In the middle of it all</span></span></div>
+<div class="scene-art" id="sceneArt">
+<svg viewBox="0 0 800 540" role="img" aria-label="Illustration of a person at their office desk, with a small point of light at their forehead">
+<defs><linearGradient id="wall" x2="0" y2="1"><stop stop-color="#e8e6f0"/><stop offset="1" stop-color="#f4e9dd"/></linearGradient><linearGradient id="window" x2="0" y2="1"><stop stop-color="#c4cddd"/><stop offset="1" stop-color="#fce5c9"/></linearGradient><radialGradient id="light"><stop stop-color="#fffde9"/><stop offset=".3" stop-color="#f6d899" stop-opacity=".8"/><stop offset="1" stop-color="#f6d899" stop-opacity="0"/></radialGradient><linearGradient id="shirt" x2="1" y2="1"><stop stop-color="#9291ab"/><stop offset="1" stop-color="#686b87"/></linearGradient><filter id="shadow"><feGaussianBlur stdDeviation="9"/></filter></defs>
+<rect width="800" height="540" fill="url(#wall)"/><path d="M0 399L800 357V540H0Z" fill="#d7d0cc"/><path d="M0 399L800 357" stroke="#c6bfc1"/>
+<rect x="67" y="41" width="273" height="270" rx="85" fill="#d9d4df"/><path d="M81 300V127a122 122 0 0 1 245 0v173Z" fill="url(#window)"/><circle cx="254" cy="133" r="41" fill="#f8e9ce" opacity=".8"/>
+<g fill="#b8bdce" opacity=".65"><path d="M81 251h30v-57h35v105H81Z"/><path d="M151 299V218h25v-41h32v122Z"/><path d="M222 299v-75h24v-37h35v112Z"/><path d="M289 299v-95h37v95Z"/></g><path d="M203 48v253M82 209h244" stroke="#f5f0eb" stroke-width="9"/><path d="M67 308h275" stroke="#c3b9c5" stroke-width="12"/>
+<rect x="571" y="73" width="105" height="126" rx="3" fill="#d0c8ca"/><rect x="578" y="80" width="91" height="112" fill="#f7eee1"/><circle cx="622" cy="119" r="21" fill="#dac5a7"/><path d="M588 180l33-47 37 47" fill="#a7afa3"/>
+<path d="M667 405v-116" stroke="#777e6b" stroke-width="5"/><g fill="#8d9c82"><ellipse cx="647" cy="313" rx="12" ry="32" transform="rotate(-40 647 313)"/><ellipse cx="687" cy="336" rx="12" ry="32" transform="rotate(40 687 336)"/><ellipse cx="650" cy="357" rx="12" ry="30" transform="rotate(-47 650 357)"/><ellipse cx="680" cy="281" rx="11" ry="30" transform="rotate(26 680 281)"/></g><path d="M638 394h59l-9 66h-41Z" fill="#bca58c"/><path d="M635 394h65v12h-65Z" fill="#cab399"/>
+<ellipse cx="399" cy="489" rx="194" ry="17" fill="#87808c" opacity=".2" filter="url(#shadow)"/>
+<path d="M386 421v61m-49 7 49-8 53 8m-53-9v-48" stroke="#666477" stroke-width="9" stroke-linecap="round"/><path d="M324 334q-8-62 11-67h76q21 1 19 24l-8 113q0 30-28 31h-53q-18-3-17-23Z" fill="#68677a"/><path d="M334 335v-52h75v126h-75Z" fill="#7e7c91"/>
+<path d="M399 410q55-11 68 15l25 42-24 12-39-38-65-5Z" fill="#535971"/><path d="M467 468l27-7 25 15q8 12-8 14h-43Z" fill="#4e4c5e"/>
+<g id="person"><path d="M349 327q-2-62 29-72l44 6q20 9 26 58l-12 90q-49 15-86-4Z" fill="url(#shirt)"/><path d="M383 242v26q16 20 29-2l-5-28Z" fill="#c79882"/><path d="M377 189q36-26 58 11l-1 26q-4 32-24 30-25-2-34-31Z" fill="#d7ac92"/><path d="M376 219q-17-43 13-49 43-12 49 26l-14-1-9-13q-4 19-33 18l2 21Z" fill="#504650"/><path d="M422 220l8 2m-15 15h9" stroke="#87675e" stroke-width="2" stroke-linecap="round"/><path d="M375 284q-17 11-13 40l38 33 14-15-25-31 10-14" fill="#a4a0b7"/><path d="M402 345l31-3 11 8-6 13-31-6Z" fill="#d7ac92"/><path d="M424 280q17 3 22 33l13 21 33 4-3 17-49-3-24-42" fill="#8b8ca6"/><path d="M488 338h25l11 12-7 9-29-5Z" fill="#d7ac92"/></g>
+<path d="M245 362h367l-17 19H234Z" fill="#d5b997"/><path d="M234 381h361v12H234Z" fill="#b49b83"/><path d="M256 393l-12 104m323-104 13 104" stroke="#827c80" stroke-width="10"/>
+<path d="M447 348h103l27 15H429Z" fill="#a7a6b5"/><path d="M474 273h110l-32 77H445Z" fill="#9093a8"/><path d="M481 280h93l-26 62h-92Z" fill="#b2b9c9"/><circle cx="518" cy="311" r="7" fill="#d6d9e1"/><path d="M280 333h26v24h-26Z" fill="#eee6db"/><path d="M306 337q21-2 1 14" fill="none" stroke="#eee6db" stroke-width="5"/><path d="M286 324q-8-8 1-15" fill="none" stroke="#b4a5ac" stroke-width="2" opacity=".6"/>
+<g id="soulGlow"><circle cx="416" cy="205" r="65" fill="url(#light)"/><circle cx="416" cy="205" r="5" fill="#fff8d7"/><circle cx="416" cy="205" r="9" fill="none" stroke="#fff4c8" opacity=".7"/></g>
+</svg>
+<button type="button" class="thought t1" id="bubble1">What if I get it wrong?</button><button type="button" class="thought t2" id="bubble2">There’s too much to do.</button><button type="button" class="thought t3" id="bubble3">Everyone else is ahead.</button>
+<div class="inner-universe" aria-hidden="true"><div class="orbit o1"></div><div class="orbit o2"></div><div class="orbit o3"></div><div class="soul"><span>✦</span></div><span class="inner-caption">I am the one who chooses.</span></div>
+</div>
+<div class="scene-bottom"><div><span class="tiny">YOUR INNER WEATHER</span><strong id="weather">A little overwhelmed</strong></div><div class="weather-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+</div>
+<aside class="play-panel"><div class="panel-top"><span id="chapter">YOUR FIRST MOMENT</span><span id="count">01 — 03</span></div><div id="panel" aria-live="polite"></div><div class="panel-footer"><span class="small-spark">✧</span><span id="footerNote">No timer. No perfect answers. Just practice.</span></div></aside>
+</section>
+<section class="journey" aria-label="The three steps"><div class="journey-step" data-step="pause"><span>01</span><div><h3>Stand back</h3><p>Create a little space.</p></div><i>↗</i></div><div class="journey-step" data-step="observe"><span>02</span><div><h3>Observe</h3><p>Notice without judgement.</p></div><i>◎</i></div><div class="journey-step" data-step="steer"><span>03</span><div><h3>Steer</h3><p>Choose your next thought.</p></div><i>↗</i></div></section>
+<footer><span>Made for a more mindful everyday.</span><span>Inspired by Raja Yoga & the power of conscious choice <span class="footer-sun">✳</span></span></footer>
+</main>
+<dialog id="info"><button class="close" aria-label="Close dialog">×</button><div class="eyebrow">THE IDEA BEHIND STILLPOINT</div><h2>A point of light.<br>A space to choose.</h2><p>In Brahma Kumaris’ Raja Yoga philosophy, the soul is understood as a conscious spiritual being, often visualised as a point of light. Practising soul consciousness means remembering the inner self beyond our roles.</p><p>This student game adapts three ideas: step back as a detached observer, notice the quality of a thought, and choose a peaceful, purposeful response. The light represents awareness; it does not erase the situation.</p><p>In this game, <b>positive</b> thoughts are kind and realistic, <b>necessary</b> thoughts help the next action, <b>negative</b> thoughts judge or predict harm, and <b>unnecessary</b> thoughts repeat without helping. These are learning categories; a real thought may overlap.</p><p>Feelings are welcome here. A constructive thought can acknowledge stress and still help us act.</p><a href="https://www.brahmakumaris.org/concepts-and-conversations/soul" target="_blank" rel="noopener">Read: Brahma Kumaris — Soul ↗</a><a href="https://www.brahmakumaris.com/frequently-asked-questions/" target="_blank" rel="noopener">Read: Observing and reframing thoughts ↗</a><small>An independent educational project, inspired by these teachings; not an official Brahma Kumaris product or a treatment for anxiety.</small></dialog>
+<script src="scene.js"></script>
+<script src="game.js"></script>
+</body></html>
